@@ -6,6 +6,7 @@ public class PhieuNhap {
     private Integer id;
     private List<HangNhap> hangNhap;
     private NhaCungCap nhaCungCap;
+    private NhanVien nv;
     public Integer getId() {
         return id;
     }
@@ -25,7 +26,14 @@ public class PhieuNhap {
     public void setNhaCungCap(NhaCungCap nhaCungCap) {
         this.nhaCungCap = nhaCungCap;
     }
-    public PhieuNhap(Integer id, List<HangNhap> hangNhap) {
+    
+	public NhanVien getNv() {
+		return nv;
+	}
+	public void setNv(NhanVien nv) {
+		this.nv = nv;
+	}
+	public PhieuNhap(Integer id, List<HangNhap> hangNhap) {
         super();
         this.id = id;
         this.hangNhap = hangNhap;

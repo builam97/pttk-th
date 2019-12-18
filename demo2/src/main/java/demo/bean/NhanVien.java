@@ -1,11 +1,8 @@
 package demo.bean;
 
-import java.util.List;
-
 public class NhanVien {
     private Integer id;
     
-    private List<PhieuNhap> phieuNhap;
     private Account account;
 
     public Integer getId() {
@@ -16,14 +13,6 @@ public class NhanVien {
         this.id = id;
     }
 
-    public List<PhieuNhap> getPhieuNhap() {
-        return phieuNhap;
-    }
-
-    public void setPhieuNhap(List<PhieuNhap> phieuNhap) {
-        this.phieuNhap = phieuNhap;
-    }
-
     public Account getAccount() {
         return account;
     }
@@ -32,9 +21,8 @@ public class NhanVien {
         this.account = account;
     }
 
-    public NhanVien(Integer id, List<PhieuNhap> phieuNhap) {
+    public NhanVien(Integer id) {
         super();
         this.id = id;
-        this.phieuNhap = phieuNhap;
     }
 }
